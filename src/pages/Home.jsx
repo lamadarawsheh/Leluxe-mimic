@@ -100,8 +100,8 @@ const Home = () => {
               <div className="hero__content  ">
                 <h5 className="mb-3">Easy way to make an order</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>HUNGRY?</span> Just wait <br /> food at
-                  <span> your door</span>
+                  <span>Looking for the Perfect Style?</span> Just wait <br /> Luxury is 
+                  <span> your Choice </span>
                 </h1>
 
                 <p>
@@ -115,7 +115,7 @@ const Home = () => {
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/foods">See all foods</Link>
+                    <Link to="/foods">See all Categories</Link>
                   </button>
                 </div>
 

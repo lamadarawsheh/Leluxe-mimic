@@ -15,15 +15,19 @@ const nav__links = [
     path: "/home",
   },
   {
-    display: "Foods",
+    display: "Shop",
     path: "/foods",
   },
   {
-    display: "Cart",
+    display: "Women",
     path: "/cart",
   },
   {
-    display: "Contact",
+    display: "Men",
+    path: "/contact",
+  },,
+  {
+    display: "Cart",
     path: "/contact",
   },
 ];
@@ -52,7 +56,6 @@ const Header = () => {
       }
     });
 
-    return () => window.removeEventListener("scroll");
   }, []);
 
   return (
@@ -60,8 +63,7 @@ const Header = () => {
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
-            <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
+            <img src={logo} alt="logo" width={100} height={100} />
           </div>
 
           {/* ======= menu ======= */}
