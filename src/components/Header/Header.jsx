@@ -20,14 +20,18 @@ const nav__links = [
   },
   {
     display: "Women",
-    path: "/cart",
+    path: "/women",
   },
   {
     display: "Men",
-    path: "/contact",
+    path: "/Men",
   },,
   {
     display: "Cart",
+    path: "/cart",
+  },
+  {
+    display: "Contact",
     path: "/contact",
   },
 ];
