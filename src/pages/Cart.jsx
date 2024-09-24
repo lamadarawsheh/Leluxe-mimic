@@ -1,6 +1,4 @@
 import React from "react";
-
-import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 import "../styles/cart-page.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -13,23 +11,23 @@ const Cart = () => {
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   return (
     <Helmet title="Cart">
-      <CommonSection title="Your Cart" />
       <section>
         <Container>
           <Row>
-            <Col lg="12">
+            <Col lg="8" md="12">
               {cartItems.length === 0 ? (
                 <h5 className="text-center">Your cart is empty</h5>
               ) : (
-                <table className="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Image</th>
-                      <th>Product Title</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
-                      <th>Delete</th>
-                    </tr>
+                <table className="custom-table">
+                  <thead >
+                  <tr>
+                    <th className="custom-th">Product</th>
+                    <th className="custom-th">Title</th>
+                    <th className="custom-th">Price</th>
+                    <th className="custom-th">Quantity</th>
+                    <th className="custom-th">Delete</th>
+                  </tr>
+
                   </thead>
                   <tbody>
                     {cartItems.map((item) => (
@@ -39,22 +37,26 @@ const Cart = () => {
                 </table>
               )}
 
-              <div className="mt-4">
-                <h6>
-                  Subtotal: $
-                  <span className="cart__subtotal">{totalAmount}</span>
-                </h6>
-                <p>Taxes and shipping will calculate at checkout</p>
-                <div className="cart__page-btn">
-                  <button className="addTOCart__btn me-4">
-                    <Link to="/foods">Continue Shopping</Link>
-                  </button>
-                  <button className="addTOCart__btn">
-                    <Link to="/checkout">Proceed to checkout</Link>
-                  </button>
-                </div>
-              </div>
+            
             </Col>
+                <Col lg="4" md="12" className="d-flex flex-column align-items-center ">
+                  <div className="text-center mt-4" style={{border:' 1px solid black', padding:'20px' }}>
+                    <h6>
+                      Subtotal: $
+                      <span className="cart__subtotal">{totalAmount}</span>
+                    </h6>
+                    <p>Taxes and shipping will be calculated at checkout</p>
+                    <div className="cart__page-btn d-flex justify-content-center gap-2 mt-3">
+                      <button className="Cart__btn">
+                        <Link to="/foods" className="  text-decoration-none">Continue Shopping</Link>
+                      </button>
+                      <button className="Cart__btn">
+                        <Link to="/checkout" className=" text-decoration-none">Proceed to checkout</Link>
+                      </button>
+                    </div>
+                  </div>
+                 </Col>
+
           </Row>
         </Container>
       </section>
