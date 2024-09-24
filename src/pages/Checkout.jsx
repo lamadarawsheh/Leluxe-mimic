@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
-import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 
 import "../styles/checkout.css";
@@ -37,7 +36,6 @@ const Checkout = () => {
 
   return (
     <Helmet title="Checkout">
-      <CommonSection title="Checkout" />
       <section>
         <Container>
           <Row>
@@ -113,6 +111,10 @@ const Checkout = () => {
                   </h5>
                 </div>
               </div>
+              <div className="button-container text-center mt-4">
+                 <button className="place-order-btn">Place Order</button>
+              </div>
+
             </Col>
           </Row>
         </Container>
