@@ -1,7 +1,8 @@
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background: #89723b; /* Main footer background color */
+  background: #89723b;
+  /* Main footer background color */
 }
 
 .footer__logo img {
@@ -11,14 +12,17 @@
 
 .footer__logo h5 {
   font-weight: 600;
-  font-size: 1.2rem; /* Slightly larger font for the name */
+  font-size: 1.2rem;
+  /* Slightly larger font for the name */
   margin-bottom: 15px;
-  color: #fff; /* White for contrast */
+  color: #fff;
+  /* White for contrast */
 }
 
 .footer__logo p {
   font-size: 0.9rem;
-  color: #f3e5c3; /* Light color for description */
+  color: #f3e5c3;
+  /* Light color for description */
   line-height: 28px;
 }
 
@@ -29,22 +33,26 @@
 .delivery__time-item span {
   font-weight: 600;
   font-size: 1rem;
-  color: #fff; /* White for contrast */
+  color: #fff;
+  /* White for contrast */
 }
 
 .delivery__time-item p {
-  color: #f3e5c3; /* Light color for description */
+  color: #f3e5c3;
+  /* Light color for description */
 }
 
 .footer__title {
   font-size: 1.1rem;
-  color: #fff; /* White for titles */
+  color: #fff;
+  /* White for titles */
   font-weight: 600;
 }
 
 .newsletter {
   padding: 5px;
-  border: 1px solid #f3e5c3; /* Light border */
+  border: 1px solid #f3e5c3;
+  /* Light border */
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -56,7 +64,8 @@
   background: transparent;
   border: none;
   outline: none;
-  color: #fff; /* White text for input */
+  color: #fff;
+  /* White text for input */
 }
 
 .newsletter input:focus {
@@ -64,29 +73,41 @@
 }
 
 .newsletter span {
-  background: #e8cd7f; /* Accent color for send button */
+  background: #e8cd7f;
+  /* Accent color for send button */
   padding: 5px 30px;
   border-radius: 5px;
 }
 
 .newsletter span i {
-  color: #fff; /* White icon */
+  color: #fff;
+  /* White icon */
 }
 
 .newsletter input::placeholder {
-  color: #f3e5c3; /* Light placeholder color */
+  color: #f3e5c3;
+  /* Light placeholder color */
 }
 
 .social__links span i {
   padding: 5px;
-  background: #c6ab57; /* Accent color for social icons */
-  color: #fff; /* White icon color */
+  background: #c6ab57;
+  /* Accent color for social icons */
+  color: #fff;
+  /* White icon color */
   border-radius: 50%;
 }
 
 .copyright__text {
   font-size: 0.8rem;
-  color: #f3e5c3; /* Light color for copyright text */
+  color: #f3e5c3;
+  /* Light color for copyright text */
+}
+
+.follow {
+  color: #f3e5c3;
+  /* Light color for copyright text */
+
 }
 
 /* Media Queries */
@@ -95,6 +116,7 @@
     padding: 7px;
     font-size: 0.7rem;
   }
+
   .newsletter span {
     padding: 4px 20px;
     font-size: 0.7rem;
@@ -128,7 +150,7 @@
   .social__links span {
     padding: 4px;
   }
-  
+
   .social__links span a {
     font-size: 0.7rem;
   }
