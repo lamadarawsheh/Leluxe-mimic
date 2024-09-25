@@ -52,7 +52,8 @@
 .form {
   width: 60%;
   margin: auto;
-  background: #fde4e4;
+  border: solid  1px #a78c4e;
+  background: transparent;
   padding: 20px;
   border-radius: 5px;
 }
