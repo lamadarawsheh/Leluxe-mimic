@@ -17,6 +17,8 @@ import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
 
 import products from "../assets/fake-data/products.js";
+import categoryImg01 from "../assets/images/categoryImg01.png";
+import categoryImg02 from "../assets/images/category-02.jpg";
 
 import foodCategoryImg01 from "../assets/images/Watches.png";
 import foodCategoryImg02 from "../assets/images/ring.png";
@@ -90,7 +92,20 @@ const Home = () => {
       setAllProducts(filteredProducts);
     }
   }, [category]);
-
+  const categoryData = [
+    {
+      display: "Women",
+      imgUrl: categoryImg01,
+      distination:"women",
+      
+    },
+    {
+      display: "Men",
+      imgUrl: categoryImg02,
+      distination:"men",
+      
+    },
+  ];
   return (
     <Helmet title="Home">
       <section>
@@ -147,7 +162,7 @@ const Home = () => {
       </section>
 
       <section className="pt-0">
-        <Category />
+      <Category categoryData={categoryData} displaybutton={true} />
       </section>
 
       <section>
