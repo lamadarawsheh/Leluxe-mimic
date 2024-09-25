@@ -1,44 +1,62 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
-
 import { Container, Row, Col } from "reactstrap";
-
-import products from "../assets/fake-data/products";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
-
 import "../styles/all-foods.css";
 import "../styles/pagination.css";
+import { useParams } from 'react-router-dom';
 
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState("");
-
   const [pageNumber, setPageNumber] = useState(0);
+  const [brand, setBrand] = useState("ALL");
+  const [allProducts, setAllProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const searchedProduct = products.filter((item) => {
-    if (searchTerm.value === "") {
-      return item;
-    }
-    if (item.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-      return item;
-    } else {
-      return console.log("not found");
-    }
-  });
+  const { data } = useParams();
 
   const productPerPage = 12;
   const visitedPage = pageNumber * productPerPage;
-  const displayPage = searchedProduct.slice(
-    visitedPage,
-    visitedPage + productPerPage
-  );
 
+  // Filter products based on search term
+  const searchedProduct = filteredProducts.filter((item) => {
+    return searchTerm === "" || item.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+
+  const displayPage = searchedProduct.slice(visitedPage, visitedPage + productPerPage);
   const pageCount = Math.ceil(searchedProduct.length / productPerPage);
 
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
+
+  useEffect(() => {
+    if (data) {
+      try {
+        const decodedData = JSON.parse(decodeURIComponent(data));
+        setAllProducts(decodedData);
+        setFilteredProducts(decodedData); // Initialize filtered products
+      } catch (error) {
+        console.error("Failed to parse data:", error);
+      }
+    }
+  }, [data]);
+
+  // Filter based on brand selection
+  useEffect(() => {
+    if (brand === "ALL") {
+      setFilteredProducts(allProducts); // Reset to all products
+    } else {
+      const filtered = allProducts.filter((item) => item.brand === brand);
+      setFilteredProducts(filtered);
+    }
+    setPageNumber(0); // Reset page number when brand changes
+  }, [brand, allProducts]);
+
+  // Extract unique brands for radio buttons
+  const uniqueBrands = ["ALL", ...new Set(allProducts.map(item => item.brand))];
 
   return (
     <Helmet title="All-Foods">
@@ -47,8 +65,26 @@ const AllFoods = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="6" md="6" sm="6" xs="12">
-              <div className="search__widget d-flex align-items-center justify-content-between ">
+            <Col lg="8" md="8" sm="12" xs="12">
+              <Row>
+                {displayPage.map((item) => (
+                  <Col lg="4" md="6" sm="6" xs="12" key={item.id} className="mb-4">
+                    <ProductCard item={item} />
+                  </Col>
+                ))}
+              </Row>
+              <div>
+                <ReactPaginate
+                  pageCount={pageCount}
+                  onPageChange={changePage}
+                  previousLabel={"Prev"}
+                  nextLabel={"Next"}
+                  containerClassName="paginationBttns"
+                />
+              </div>
+            </Col>
+            <Col lg="4" md="4" sm="12" xs="12">
+              <div className="search__widget d-flex align-items-center justify-content-between mb-4">
                 <input
                   type="text"
                   placeholder="I'm looking for...."
@@ -56,37 +92,29 @@ const AllFoods = () => {
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
               </div>
-            </Col>
-            <Col lg="6" md="6" sm="6" xs="12" className="mb-5">
-              <div className="sorting__widget text-end">
-                <select className="w-50">
-                  <option>Default</option>
-                  <option value="ascending">Alphabetically, A-Z</option>
-                  <option value="descending">Alphabetically, Z-A</option>
-                  <option value="high-price">High Price</option>
-                  <option value="low-price">Low Price</option>
-                </select>
+
+              <div className="category-filter">
+                <h5>Brands</h5>
+                {uniqueBrands.map((brandOption) => (
+                  <div key={brandOption} className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="brand"
+                      id={brandOption}
+                      checked={brand === brandOption}
+                      onChange={() => setBrand(brandOption)}
+                    />
+                    <label className="form-check-label" htmlFor={brandOption}>
+                      {brandOption}
+                    </label>
+                  </div>
+                ))}
               </div>
             </Col>
-
-            {displayPage.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-4">
-                <ProductCard item={item} />
-              </Col>
-            ))}
-
-            <div>
-              <ReactPaginate
-                pageCount={pageCount}
-                onPageChange={changePage}
-                previousLabel={"Prev"}
-                nextLabel={"Next"}
-                containerClassName=" paginationBttns "
-              />
-            </div>
           </Row>
         </Container>
       </section>

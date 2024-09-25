@@ -39,7 +39,7 @@ const Footer = () => {
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              &copy; 2024 Ayat Allan & Lama Darwish. All Rights Reserved.
+              &copy; 2024 Ayat Allan & Lama Darawsheh . All Rights Reserved.
             </p>
           </Col>
           <Col lg="6" md="6">
