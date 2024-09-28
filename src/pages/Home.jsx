@@ -12,9 +12,9 @@ import Category from "../components/UI/category/Category.jsx";
 
 import "../styles/home.css";
 
-import featureImg01 from "../assets/images/service-01.png";
-import featureImg02 from "../assets/images/service-02.png";
-import featureImg03 from "../assets/images/service-03.png";
+import featureImg01 from "../assets/images/fast-shipping.png";
+import featureImg02 from "../assets/images/time.png";
+import featureImg03 from "../assets/images/best-seller.png";
 
 import products from "../assets/fake-data/products.js";
 import categoryImg01 from "../assets/images/categoryImg01.png";

@@ -12,7 +12,7 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className="footer__logo text-start">
               <img src={logo} alt="logo" />
-              <h5>Ayat Allan & Lama Darwish</h5>
+              <h5>Ayat Allan & Lama Darawsheh </h5>
               <p>
                 Discover our exclusive collection of premium jewelry and accessories.
               </p>
