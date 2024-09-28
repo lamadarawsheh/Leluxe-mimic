@@ -126,25 +126,25 @@ const Home = () => {
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order now <i class="ri-arrow-right-s-line"></i>
+                    Order now <i className="ri-arrow-right-s-line"></i>
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/foods">See all Categories</Link>
+                    <Link to="/all">See all Categories</Link>
                   </button>
                 </div>
 
                 <div className=" hero__service  d-flex align-items-center gap-5 mt-5 ">
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
-                      <i class="ri-car-line"></i>
+                      <i className="ri-car-line"></i>
                     </span>{" "}
                     No shipping charge
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
-                      <i class="ri-shield-check-line"></i>
+                      <i className="ri-shield-check-line"></i>
                     </span>{" "}
                     100% secure checkout
                   </p>
@@ -276,7 +276,7 @@ const Home = () => {
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Exquisite Designs
+                      <i className="ri-checkbox-circle-line"></i> Exquisite Designs
 
                     </p>
                     <p className="choose__us-desc">
@@ -288,7 +288,7 @@ const Home = () => {
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Premium Quality
+                      <i className="ri-checkbox-circle-line"></i> Premium Quality
                     </p>
                     <p className="choose__us-desc">
                       We are committed to offering the highest quality jewelry and accessories.
@@ -299,7 +299,7 @@ const Home = () => {
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i>Shop from Anywhere
+                      <i className="ri-checkbox-circle-line"></i>Shop from Anywhere
                       {" "}
                     </p>
                     <p className="choose__us-desc">
