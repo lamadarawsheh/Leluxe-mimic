@@ -1,0 +1,49 @@
+.custom-table {
+  width: 100%; /* Ensure the table takes up the full width of its container */
+  border-collapse: collapse; /* Remove space between borders of table cells */
+  margin-top: 20px; /* Add some space above the table */
+}
+.custom-th {
+  text-align: center; /* Center align text in header cells */
+  padding: 20px; /* Add padding for spacing */
+  /* background-color: #F9F1E7; Add background color to the header */
+  /* border-bottom: 2px solid #dee2e6; Add bottom border to header cells */
+}
+.Cart__btn {
+  border: 1px solid #ddd ;
+  padding: 7px 25px;
+  background: #c2a35a;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+
+.cart__img-box {
+  width: 80px;
+  padding: 5px;
+}
+
+.cart__img-box img {
+  width: 100%;
+}
+
+.cart__item-del i {
+  cursor: pointer;
+}
+
+.cart__page-btn button a:hover {
+  color: black;
+}
+
+.cart__subtotal {
+  color: black;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}
