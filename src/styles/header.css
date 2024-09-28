@@ -6,34 +6,31 @@
 
 .logo {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo img {
   width: calc(100% - 60%);
   object-fit: contain;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 
-.logo h5 {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #212245;
-  margin-top: -40px;
-  margin-bottom: 0;
-}
+
 
 .menu a {
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   color: #212245;
   transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #df2020;
+  color: #c2a35a;
 }
 
 .active__menu {
-  color: #df2020 !important;
+  color: #a78c4e !important;
 }
 
 .cart__icon i,
@@ -50,18 +47,19 @@
 
 .cart__badge {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: -10px;
-  background: #df2020;
+  background: #c2a35a;
   color: #fff;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   font-size: 0.8rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .mobile__menu {

@@ -1,0 +1,136 @@
+.contact-container {
+    padding: 50px 20px; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #a38b53;
+  }
+  
+  .contact-form-col {
+    background: #a38b53; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px; 
+  }
+  
+  .contact-info-title {
+    font-weight: 600;
+    color: #a38b53; 
+    margin-bottom: 10px;
+  }
+  
+  .contact-social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-social-links li {
+    margin: 10px 0;
+  }
+  
+  .contact-social-links a {
+    color: #a38b53; 
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-social-links a:hover {
+    color: #a38b53;
+    text-shadow: 1px 1px 1px #a38b53;
+  }
+  
+  .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid #a38b53; 
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  
+  .newsletter input {
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .newsletter-btn {
+    background: #df2020; 
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter-btn i {
+    color: #fff; /* Icon color */
+  }
+  
+  .newsletter input::placeholder {
+    color: #b0b0b0; /* Placeholder color */
+  }
+  
+  .submit-btn {
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .contact-form-col,
+    .contact-info-col {
+      padding: 20px;
+    }
+  
+    .contact-info-col {
+      align-items: center; 
+      padding-left: 0; 
+      text-align: center; 
+    }
+  
+    .newsletter {
+      flex-direction: column; 
+    }
+  
+    .newsletter input {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  
+    .newsletter-btn {
+      width: 100%; 
+      border-radius: 5px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-title {
+      font-size: 1.8rem; 
+    }
+  
+    .submit-btn {
+      width: 100%; 
+    }
+  }
+  

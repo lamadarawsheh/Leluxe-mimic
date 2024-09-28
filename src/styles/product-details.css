@@ -52,7 +52,8 @@
 .form {
   width: 60%;
   margin: auto;
-  background: #fde4e4;
+  border: solid  1px #a78c4e;
+  background: transparent;
   padding: 20px;
   border-radius: 5px;
 }
@@ -86,14 +87,102 @@
 .feedback__text {
   color: #212245b6;
 }
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px; /* Space above the grid */
+}
+
+.reason-item {
+  background: #f9f9f9; /* Light background for items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Internal padding */
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+  text-align: center; /* Center text */
+}
+
+.reason-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.reason-item i {
+  font-size: 2rem; /* Larger icon size */
+  display: block; /* Block to take full width */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.reason-item p {
+  font-weight: bold; /* Bold text for reasons */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .reasons-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}
 
 .img__item {
   cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.img__item :hover{
+  border: 1px solid #5e64ff;
 }
 .related__Product-title {
   font-size: 1.4rem;
 }
+.general-items-section {
+  width: 90%;
+  margin: auto;
+  overflow-wrap: break-word;
+}
 
+.table-bordered {
+  border: 1px solid #ebecf1;
+}
+.layout-content-title {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 35px;
+}
+.layout-content-title h3 {
+  font-size: .875rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  display: inline-block;
+  background: #fff;
+  margin-bottom: 0 !important;
+  z-index: 1;
+  padding: 0 30px;
+  font-weight: 700;
+}
+.layout-content-title::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ddd;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 @media only screen and (max-width: 768px) {
   .product__title {
     font-size: 1.2rem;

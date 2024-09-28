@@ -1,11 +1,37 @@
 .checkout__bill {
-  background: #fde4e4;
+  /* background: black; */
+  color: black;
+  /* border: 1px solid #ddd; */
   padding: 30px;
 }
 
 .checkout__total {
   border-top: 1px solid #ddd;
   padding-top: 30px;
+}
+/* Style for the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add margin above the button */
+}
+
+/* Style for the button */
+.place-order-btn {
+  background-color: transparent; 
+  color: black; /* Button text color */
+  border: 2px solid black; /* Button border */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 50px; /* Optional: Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Adjust font size */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Button hover effect */
+.place-order-btn:hover {
+  background-color: #B88E2F; /* Darker background on hover */
+  border-color: #B88E2F; /* Darker border on hover */
 }
 
 @media only screen and (max-width: 768px) {

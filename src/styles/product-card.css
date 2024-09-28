@@ -1,17 +1,28 @@
 .product__item {
-  border: 1px solid #fde4e4;
   text-align: center;
   padding: 30px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* Fixed height for uniformity */
+  justify-content: space-between; /* Align content evenly */
 }
 
 .product__img {
   margin-bottom: 20px;
   transition: 0.4s;
+  height: 200px; /* Fixed height for image container */
+  overflow: hidden; /* Hide overflow to maintain uniformity */
+}
+
+.product__img img {
+  object-fit: cover; /* Cover the entire area without distortion */
+  width: 100%;
+  height: 100%; /* Ensure image takes full height of the container */
 }
 
 .product__img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1); /* Slightly reduce scale effect for better visual impact */
 }
 
 .product__content h5 a {
@@ -20,22 +31,40 @@
 }
 
 .product__content h5 {
-  margin-bottom: 30px;
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
 }
 
 .product__price {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #df2020;
+  font-weight: 500; /* Consistent weight */
+  font-size: 1rem;
+  color: black;
 }
 
-.addTOCart__btn {
+.buyViawhatsapp__btn {
   border: none;
   padding: 7px 25px;
-  background: #df2020;
+  background: #2BB057;
   color: #fff;
   border-radius: 5px;
   font-size: 0.9rem;
+}
+
+.instock {
+  color: #2BB057;
+}
+
+.addTOCart__btn {
+  border: 1px solid black;
+  padding: 7px 25px;
+  background: transparent;
+  color: black;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.addTOCart__btn:hover {
+  background: black;
+  color: white;
 }
 
 @media only screen and (max-width: 992px) {

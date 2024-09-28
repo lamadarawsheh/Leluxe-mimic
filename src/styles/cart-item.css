@@ -16,11 +16,10 @@
 .cart__product-price span {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #df2020;
+  color: black;
 }
 
 .increase__decrease-btn {
-  background: #fde4e4;
   padding: 2px 5px;
   border-radius: 5px;
 }
