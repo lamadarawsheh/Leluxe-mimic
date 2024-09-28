@@ -80,4 +80,4 @@ To get started with Movies-Stream, follow these steps:
   npm start 
   
 ## run directly through the URL:
-  
+  https://leluxe-wmimic.netlify.app/
