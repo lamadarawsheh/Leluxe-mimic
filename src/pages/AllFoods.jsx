@@ -59,8 +59,8 @@ const AllFoods = () => {
   const uniqueBrands = ["ALL", ...new Set(allProducts.map(item => item.brand))];
 
   return (
-    <Helmet title="All-Foods">
-      <CommonSection title="All Foods" />
+    <Helmet title="All-Products">
+      <CommonSection title=" All Products " />
 
       <section>
         <Container>
