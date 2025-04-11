@@ -69,7 +69,7 @@
 
 ## Installation
 
-To get started with Movies-Stream, follow these steps:
+To get started with Leluxe mimic, follow these steps:
 
 1. **Clone the repository:**
 

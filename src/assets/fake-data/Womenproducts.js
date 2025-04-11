@@ -10,7 +10,7 @@ import product_02_image_04 from "../images/ww-4.webp";
 
 
 
-import product_05_image_01 from "../images/wb2-1.jpg";
+import product_05_image_01 from "../images/wb2-2.jpg";
 import product_05_image_02 from "../images/wb2-2.jpg";
 import product_05_image_03 from "../images/wb2-3.jpg";
 
@@ -20,11 +20,11 @@ import product_06_image_03 from "../images/wj3-1.jpg";
 
 import product_07_image_01 from "../images/wb3-1.jpg";
 import product_07_image_02 from "../images/wb3-2.jpg";
-import product_07_image_03 from "../images/wb3-3.jpg";
+import product_07_image_03 from "../images/wb2-2.jpg";
 
 import product_08_image_01 from "../images/wb4-1.png";
 import product_08_image_02 from "../images/wb4-2.jpg";
-import product_08_image_03 from "../images/wb4-3.png";
+import product_08_image_03 from "../images/wb2-2.jpg";
 const Womenproducts = [
   {
     id: "11",

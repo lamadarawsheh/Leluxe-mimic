@@ -6,9 +6,9 @@ import CommonSection from "../components/UI/common-section/CommonSection";
 // import p from "../components/UI/category/ProductsCategory";
 import ProductsCategory from "../components/UI/category/ProductsCategory";
 import products from "../assets/fake-data/Womenproducts";
-import categoryImg01 from "../assets/images/WhatsApp Image 2023-04-27 at 1.53.08 PM (1).jpeg";
-import categoryImg02 from "../assets/images/wcat2.jpeg";
-import categoryImg03 from "../assets/images/wc3.jpeg";
+import categoryImg01 from "../assets/images/Necklaces1.jpg";
+import categoryImg02 from "../assets/images/wb4-1.png";
+import categoryImg03 from "../assets/images/ww3-3.jpg";
 import Category from "../components/UI/category/Category";
 const WomenWatches = products.filter(
   (product) => product.category === "Women Watches"

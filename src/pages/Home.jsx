@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
-import heroImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
 
 import { Link } from "react-router-dom";
@@ -17,8 +16,8 @@ import featureImg02 from "../assets/images/time.png";
 import featureImg03 from "../assets/images/best-seller.png";
 
 import products from "../assets/fake-data/products.js";
-import categoryImg01 from "../assets/images/categoryImg01.png";
-import categoryImg02 from "../assets/images/category-02.jpg";
+import categoryImg01 from "../assets/images/MenBags.jpg";
+import categoryImg02 from "../assets/images/necklaces.png";
 
 import foodCategoryImg01 from "../assets/images/Watches.png";
 import foodCategoryImg02 from "../assets/images/ring.png";
@@ -26,9 +25,8 @@ import foodCategoryImg03 from "../assets/images/necklaces.png";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
-import whyImg from "../assets/images/location.png";
+// import whyImg from "../assets/images/location.png";
 
-import networkImg from "../assets/images/reviews.png";
 
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
@@ -58,7 +56,9 @@ const Home = () => {
   const [hotPizza, setHotPizza] = useState([]);
 
   useEffect(() => {
-    const filteredPizza = products.filter((item) => item.category === "Watches");
+    const filteredPizza = products.filter(
+      (item) => item.category === "Watches"
+    );
     const slicePizza = filteredPizza.slice(0, 4);
     setHotPizza(slicePizza);
   }, []);
@@ -96,14 +96,12 @@ const Home = () => {
     {
       display: "Women",
       imgUrl: categoryImg01,
-      distination:"women",
-      
+      distination: "women",
     },
     {
       display: "Men",
       imgUrl: categoryImg02,
-      distination:"men",
-      
+      distination: "men",
     },
   ];
   return (
@@ -115,7 +113,8 @@ const Home = () => {
               <div className="hero__content  ">
                 <h5 className="mb-3">Easy way to make an order</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>Looking for the Perfect Style?</span> Just wait <br /> Luxury is
+                  <span>Looking for the Perfect Style?</span> Just wait <br />{" "}
+                  Luxury is
                   <span> your Choice </span>
                 </h1>
 
@@ -125,12 +124,11 @@ const Home = () => {
                 </p>
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
-                <Link to="/cart">
-                <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order now <i className="ri-arrow-right-s-line"></i>
-                  </button>
-                </Link>
-                
+                  <Link to="/cart">
+                    <button className="order__btn d-flex align-items-center justify-content-between">
+                      Order now <i className="ri-arrow-right-s-line"></i>
+                    </button>
+                  </Link>
 
                   <button className="all__foods-btn">
                     <Link to="/all">See all Categories</Link>
@@ -155,17 +153,16 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            {/* <Col lg="6" md="6">
               <div className="hero__img">
-                <img src={heroImg} alt="hero-img" className="w-100" />
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>
 
       <section className="pt-0">
-      <Category categoryData={categoryData} displaybutton={true} />
+        <Category categoryData={categoryData} displaybutton={true} />
       </section>
 
       <section>
@@ -214,15 +211,17 @@ const Home = () => {
             <Col lg="12">
               <div className="food__category d-flex align-items-center justify-content-center gap-4">
                 <button
-                  className={`all__btn  ${category === "ALL" ? "foodBtnActive" : ""
-                    } `}
+                  className={`all__btn  ${
+                    category === "ALL" ? "foodBtnActive" : ""
+                  } `}
                   onClick={() => setCategory("ALL")}
                 >
                   All
                 </button>
                 <button
-                  className={`d-flex align-items-center gap-2 ${category === "Watches" ? "foodBtnActive" : ""
-                    } `}
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "Watches" ? "foodBtnActive" : ""
+                  } `}
                   onClick={() => setCategory("Watches")}
                 >
                   <img src={foodCategoryImg01} alt="" />
@@ -230,8 +229,9 @@ const Home = () => {
                 </button>
 
                 <button
-                  className={`d-flex align-items-center gap-2 ${category === "Rings" ? "foodBtnActive" : ""
-                    } `}
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "Rings" ? "foodBtnActive" : ""
+                  } `}
                   onClick={() => setCategory("Rings")}
                 >
                   <img src={foodCategoryImg02} alt="" />
@@ -239,8 +239,9 @@ const Home = () => {
                 </button>
 
                 <button
-                  className={`d-flex align-items-center gap-2 ${category === "Necklaces" ? "foodBtnActive" : ""
-                    } `}
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "Necklaces" ? "foodBtnActive" : ""
+                  } `}
                   onClick={() => setCategory("Necklaces")}
                 >
                   <img src={foodCategoryImg03} alt="" />
@@ -262,7 +263,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <img src={whyImg} alt="why-tasty-treat" className="w-100" />
+              {/* <img src={whyImg} alt="why-tasty-treat" className="w-100" /> */}
             </Col>
 
             <Col lg="6" md="6">
@@ -272,43 +273,39 @@ const Home = () => {
                 </h2>
                 <p className="tasty__treat-desc">
                   Discover the elegance and craftsmanship behind every piece.
-
-
                 </p>
 
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2 ">
-                      <i className="ri-checkbox-circle-line"></i> Exquisite Designs
-
+                      <i className="ri-checkbox-circle-line"></i> Exquisite
+                      Designs
                     </p>
                     <p className="choose__us-desc">
-                      Each item is carefully crafted to enhance your beauty and style.
-
-
+                      Each item is carefully crafted to enhance your beauty and
+                      style.
                     </p>
                   </ListGroupItem>
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i className="ri-checkbox-circle-line"></i> Premium Quality
+                      <i className="ri-checkbox-circle-line"></i> Premium
+                      Quality
                     </p>
                     <p className="choose__us-desc">
-                      We are committed to offering the highest quality jewelry and accessories.
-
-
+                      We are committed to offering the highest quality jewelry
+                      and accessories.
                     </p>
                   </ListGroupItem>
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i className="ri-checkbox-circle-line"></i>Shop from Anywhere
-                      {" "}
+                      <i className="ri-checkbox-circle-line"></i>Shop from
+                      Anywhere{" "}
                     </p>
                     <p className="choose__us-desc">
-                      Enjoy the convenience of shopping for your favorite pieces from any location.
-
-
+                      Enjoy the convenience of shopping for your favorite pieces
+                      from any location.
                     </p>
                   </ListGroupItem>
                 </ListGroup>
@@ -353,9 +350,9 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            {/* <Col lg="6" md="6">
               <img src={networkImg} alt="testimonial-img" className="w-100" />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>
