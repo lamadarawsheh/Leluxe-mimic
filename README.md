@@ -4,7 +4,7 @@
 
 **Leluxe-mimic** is a mimic and enhancement initiative designed to elevate the functionality and design of the original [Leluxe](https://leluxe.erpmaxsolutions.com) website. Built using **React**, this project focuses on delivering an exceptional user experience through modern web technologies, ensuring both visual appeal and high performance.
 
-<img width="1440" alt="Screenshot 2024-09-28 at 10 54 58 PM" src="https://github.com/user-attachments/assets/f80d9ba3-dd40-4b48-bceb-5f7d0eaff9bb">
+<img width="1391" alt="Screenshot 2025-04-11 at 2 08 09 AM" src="https://github.com/user-attachments/assets/9f216498-54d1-4e27-b110-4202f574c66e" />
 
 ## Table of Contents
 - [Description](#Description)
@@ -18,18 +18,17 @@
 
 - **Home Page**: Engaging landing page with featured products and categories.
 
-  -<img width="1440" alt="Screenshot 2024-09-28 at 10 54 58 PM" src="https://github.com/user-attachments/assets/f80d9ba3-dd40-4b48-bceb-5f7d0eaff9bb">
-  
-  -<img width="1440" alt="Screenshot 2024-09-28 at 11 01 44 PM" src="https://github.com/user-attachments/assets/cde2fba8-2850-47af-8093-4de8b7d8727c">
-  
-  -<img width="1440" alt="Screenshot 2024-09-28 at 11 09 14 PM" src="https://github.com/user-attachments/assets/01b970aa-abc2-4686-bc8d-7a6f8d5baa38">
-  
+ <img width="1391" alt="Screenshot 2025-04-11 at 2 08 09 AM" src="https://github.com/user-attachments/assets/9f216498-54d1-4e27-b110-4202f574c66e" />
+ 
+<img width="1386" alt="Screenshot 2025-04-11 at 2 12 28 AM" src="https://github.com/user-attachments/assets/cfc02a55-515a-4813-9637-2b041a5ae1b5" />
+
+ 
   -<img width="1440" alt="Screenshot 2024-09-28 at 11 10 21 PM" src="https://github.com/user-attachments/assets/21278ee4-119d-4411-8b43-9c3d3753254a">
-  
-  -<img width="1440" alt="Screenshot 2024-09-28 at 11 10 34 PM" src="https://github.com/user-attachments/assets/8ed3fa5c-415d-4752-924b-1e0f42d6a4fe">
+  <img width="1393" alt="Screenshot 2025-04-11 at 2 14 04 AM" src="https://github.com/user-attachments/assets/207c0927-c2c1-4f22-9ac4-8709797c9210" />
+
 
 - **Women’s Categories**: Section for various women's products.
-  <img width="1440" alt="Screenshot 2024-09-28 at 11 02 22 PM" src="https://github.com/user-attachments/assets/9d077485-06c4-4937-94ed-d2b46755ce23">
+<img width="1390" alt="Screenshot 2025-04-11 at 2 14 47 AM" src="https://github.com/user-attachments/assets/4deeefc5-0862-4fff-b350-9bf79ffc3889" />
 
 - **Women’s Products**: Section for various women's products.
   <img width="1440" alt="Screenshot 2024-09-28 at 11 04 59 PM" src="https://github.com/user-attachments/assets/3750f9ec-bc80-4124-b3b1-6edbf9016e33">
@@ -46,9 +45,9 @@
   <img width="1440" alt="Screenshot 2024-09-28 at 11 05 52 PM" src="https://github.com/user-attachments/assets/7988eed1-7a9b-46b8-bb41-f1582a0e3bd9">
 
 - **Cart**: Review selected items before checkout.
+<img width="1391" alt="Screenshot 2025-04-11 at 2 20 04 AM" src="https://github.com/user-attachments/assets/c1b3ad3c-1f29-42d3-b395-5924fe481966" />
 
-  <img width="1440" alt="Screenshot 2024-09-28 at 11 06 19 PM" src="https://github.com/user-attachments/assets/f5b5f9e0-5ed9-4722-b1fe-6e3418171da8">
-  <img width="1440" alt="Screenshot 2024-09-28 at 11 06 32 PM" src="https://github.com/user-attachments/assets/2a5ed86f-b979-4fef-adc0-9e19e6dcb2b8">
+  <img width="1393" alt="Screenshot 2025-04-11 at 2 16 26 AM" src="https://github.com/user-attachments/assets/4f2572d1-18ab-45b7-ae5e-e74002ca8330" />
 
 - **Checkout**: User-friendly checkout process.
 
@@ -80,4 +79,4 @@ To get started with Leluxe mimic, follow these steps:
   npm start 
   
 ## run directly through the URL:
-  https://leluxe-wmimic.netlify.app/
+  [https://leluxe-wmimic.netlify.app/](https://leluxe-mimicweb.netlify.app/)
