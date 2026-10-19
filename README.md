@@ -2,7 +2,7 @@
 
 ## Description
 
-**Leluxe-mimic** is a mimic and enhancement initiative designed to elevate the functionality and design of the original [Leluxe](https://leluxe.erpmaxsolutions.com) website. Built using **React**, this project focuses on delivering an exceptional user experience through modern web technologies, ensuring both visual appeal and high performance.
+**Leluxe-mimic** is a mimic and enhancement initiative designed to elevate the functionality and design of a  website. Built using **React**, this project focuses on delivering an exceptional user experience through modern web technologies, ensuring both visual appeal and high performance.
 
 <img width="1391" alt="Screenshot 2025-04-11 at 2 08 09 AM" src="https://github.com/user-attachments/assets/9f216498-54d1-4e27-b110-4202f574c66e" />
 
